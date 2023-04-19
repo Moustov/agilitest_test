@@ -1,0 +1,18 @@
+[ats-header]
+
+author -> chris
+created -> 2023-04-19 at 15:25:55
+
+[ats-variables]
+
+var -> propertyVar
+
+[ats-actions]
+
+channel-start -> new-channel_1 -> firefox
+goto-url -> https://www.caipture.com/demo/samples.html
+keyboard -> $key(HOME)19042023$key(TAB)10:24 -> INPUT [name = datetime-local, type = datetime-local]
+click -> INPUT [type = submit, value = Submit] -> TD [text = Datetime-local :]
+comment -> check if URL includes ?datetime-local=2023-04-19T10%3A24
+check-property -> Text = https://www.caipture.com/demo/samples.html?datetime-local&eq;2023-04-19T10%3A24 -> Edit [Text = https://www.caipture.com/demo/samples.html?datetime-local&eq;2023-04-19T10%3A24] -> syscomp
+check-value ->  = 
