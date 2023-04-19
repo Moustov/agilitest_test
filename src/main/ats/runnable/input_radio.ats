@@ -1,0 +1,17 @@
+[ats-header]
+
+author -> chris
+created -> 2023-04-19 at 15:25:55
+
+[ats-variables]
+
+var -> propertyVar
+
+[ats-actions]
+
+channel-start -> new-channel_1 -> firefox
+goto-url -> https://www.caipture.com/demo/samples.html
+check-property -> checked = true -> INPUT [name = gender, type = radio, value = male]
+click -> INPUT [name = gender, type = radio, value = female]
+check-property -> checked = true -> INPUT [name = gender, type = radio, value = female]
+channel-close -> new-channel_1

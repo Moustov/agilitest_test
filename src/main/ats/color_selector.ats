@@ -1,0 +1,17 @@
+[ats-header]
+
+author -> MOUSTOV\chris
+created -> 2023-04-15 at 16:43:33
+
+[ats-variables]
+
+var -> propertyVar
+
+[ats-actions]
+
+channel-start -> firefox_channel -> firefox
+goto-url -> https://www.caipture.com/demo/samples.html
+comment -> click color
+click -> Button [id = 40] -> syscomp
+comment -> select color
+click

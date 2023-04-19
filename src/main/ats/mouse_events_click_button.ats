@@ -1,0 +1,16 @@
+[ats-header]
+
+author -> chris
+created -> 2023-04-19 at 15:25:55
+
+[ats-variables]
+
+var -> propertyVar
+
+[ats-actions]
+
+channel-start -> new-channel_1 -> firefox
+goto-url -> https://www.caipture.com/demo/samples.html
+click -> button [@index = 1]
+property-get -> text => propertyVar -> input [id = clickbutton]
+check-value -> $var(propertyVar) = OK

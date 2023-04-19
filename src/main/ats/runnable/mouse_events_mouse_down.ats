@@ -1,0 +1,17 @@
+[ats-header]
+
+author -> chris
+created -> 2023-04-19 at 15:25:55
+
+[ats-variables]
+
+var -> propertyVar
+
+[ats-actions]
+
+channel-start -> new-channel_1 -> firefox
+goto-url -> https://www.caipture.com/demo/samples.html
+click -> SPAN [text = Mouse Down Area]
+property-get -> text => propertyVar -> SPAN [id = mousedownbutton]
+check-value -> $var(propertyVar) = OK
+channel-close -> new-channel_1

@@ -1,0 +1,15 @@
+<atsProject>
+  <domain>com.functional</domain>
+  <name>caipture_test</name>
+  <version>0.0.1</version>
+  <description>ATS project created with Agilitest Editor
+primitives for testing purehtml pages</description>
+  <useMaven>false</useMaven>
+  <autoUpdateAts>true</autoUpdateAts>
+  <useProjectDomain>false</useProjectDomain>
+  <uuid>FCF1232A-CA3A-72B3-0EC1-9A296C94AB89</uuid>
+  <groups>
+    <group tag="DEF" color="red" description="">default</group>
+  </groups>
+  <environment/>
+</atsProject>
