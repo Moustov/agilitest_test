@@ -1,0 +1,17 @@
+[ats-header]
+
+author -> chris
+created -> 2023-04-20 at 22:10:52
+
+[ats-variables]
+
+
+[ats-actions]
+
+comment -> select color R:$param(0) / V:$param(1) / B:$param(2)
+keyboard -> $param(0) -> Edit [ClassName = Edit, Name = Rouge :] -> syscomp
+keyboard -> $param(1) -> Edit [ClassName = Edit, Name = Vert :] -> syscomp
+keyboard -> $param(2) -> Edit [ClassName = Edit, Name = Bleu :] -> syscomp
+click -> Button [ClassName = Button, Name = OK] -> syscomp
+comment -> submit color
+click -> INPUT [type = submit, value = Submit] -> TD [text = Color :]

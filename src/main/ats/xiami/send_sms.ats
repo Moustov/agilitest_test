@@ -1,0 +1,16 @@
+[ats-header]
+
+author -> chris
+created -> 2023-04-20 at 21:10:51
+
+[ats-variables]
+
+
+[ats-actions]
+
+channel-start -> new-channel_1 -> mobile://192.168.0.21:8080/com.google.android.apps.messaging
+click -> Button [innerText = Démarrer une discussion, viewId = start_chat_fab]
+keyboard -> 1234567890 -> MultiAutoCompleteTextView [innerText = Saisissez un nom&co; un numéro de téléphone ou une adresse e-mail, viewId = recipient_text_view]
+click -> LinearLayout [viewId = contact_picker_create_group]
+keyboard -> Bonjour ! -> EditText [viewId = compose_message_text]
+click -> ImageView [viewId = send_message_button_icon]

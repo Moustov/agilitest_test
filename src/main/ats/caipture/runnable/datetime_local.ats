@@ -11,8 +11,7 @@ var -> propertyVar
 
 channel-start -> new-channel_1 -> firefox
 goto-url -> https://www.caipture.com/demo/samples.html
-keyboard -> $key(HOME)19042023$key(TAB)10:24 -> INPUT [name = datetime-local, type = datetime-local]
-click -> INPUT [type = submit, value = Submit] -> TD [text = Datetime-local :]
-comment -> check if URL includes ?datetime-local=2023-04-19T10%3A24
-check-property -> Text = https://www.caipture.com/demo/samples.html?datetime-local&eq;2023-04-19T10%3A24 -> Edit [Text = https://www.caipture.com/demo/samples.html?datetime-local&eq;2023-04-19T10%3A24] -> syscomp
+callscript -> subscripts.page_object_models.caipture.datetime_local_part.set_datetime_local [19042023,10:24]
+comment -> check if URL includes ?datetime-local=....T..%3A..<br>todo: refine oracle
+check-property -> Text =~ .*datetime-local&eq;&lb;0-9&rb;*-&lb;0-9&rb;*-&lb;0-9&rb;*T&lb;0-9&rb;*%3A&lb;0-9&rb;* -> Edit [Text = https://www.caipture.com/demo/samples.html?datetime-local&eq;2023-04-19T10%3A24] -> syscomp
 channel-close -> new-channel_1

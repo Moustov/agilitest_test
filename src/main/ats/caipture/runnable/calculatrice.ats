@@ -11,14 +11,10 @@ var -> propertyVar
 
 channel-start -> caipture_demo -> firefox
 goto-url -> https://www.caipture.com/demo/samples.html
-comment -> touche 7
-click -> input [@index = 6]
-comment -> touche X
-click -> input [@index = 13]
-comment -> touche 4
-click -> input [@index = 10]
-comment -> touche =
-click -> input [@index = 21]
+callscript -> subscripts.page_object_models.caipture.calc_part.calc_key_7
+callscript -> subscripts.page_object_models.caipture.calc_part.calc_key_multiply
+callscript -> subscripts.page_object_models.caipture.calc_part.calc_key_4
+callscript -> subscripts.page_object_models.caipture.calc_part.calc_key_equal
 property-get -> value => propertyVar -> input [@index = 1]
 check-value -> $var(propertyVar) = 28
 channel-close -> caipture_demo

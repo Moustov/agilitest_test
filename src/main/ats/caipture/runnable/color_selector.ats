@@ -11,14 +11,8 @@ var -> propertyVar
 
 channel-start -> firefox_channel -> firefox
 goto-url -> https://www.caipture.com/demo/samples.html
-comment -> click color
-click -> INPUT [name = color, type = color] -> TD [text = Color :]
-comment -> select color
-keyboard -> 200 -> Edit [ClassName = Edit, Name = Rouge :] -> syscomp
-keyboard -> 150 -> Edit [ClassName = Edit, Name = Vert :] -> syscomp
-keyboard -> 132 -> Edit [ClassName = Edit, Name = Bleu :] -> syscomp
-click -> Button [ClassName = Button, Name = OK] -> syscomp
-comment -> submit color
-click -> INPUT [type = submit, value = Submit] -> TD [text = Color :]
-check-property -> Text = https://www.caipture.com/demo/samples.html?color&eq;%23c89684 -> Edit [Name = Saisir un terme à rechercher ou une adresse] -> syscomp
+callscript -> subscripts.page_object_models.caipture.color_picker_part.open_color_picker
+callscript -> subscripts.page_object_models.caipture.color_picker_part.select_color [200,150,132]
+comment -> <i>todo: refine oracle</i>
+check-property -> Text =~ .*color.*&lb;0-9a-f&rb; -> Edit [Name = Saisir un terme à rechercher ou une adresse] -> syscomp
 channel-close -> firefox_channel

@@ -1,0 +1,12 @@
+[ats-header]
+
+author -> chris
+created -> 2023-04-20 at 22:04:30
+
+[ats-variables]
+
+
+[ats-actions]
+
+comment -> touche 4
+click -> input [@index = 10]
