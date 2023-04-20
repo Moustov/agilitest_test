@@ -67,7 +67,7 @@
         <version>3.0.0-M5</version>
         <configuration>
           <suiteXmlFiles>
-            <suiteXmlFile>src/exec/suite.xml</suiteXmlFile>
+            <suiteXmlFile>src/exec/caipture.xml</suiteXmlFile>
           </suiteXmlFiles>
           <reportsDirectory>${project.basedir}/target/surefire-reports</reportsDirectory>
         </configuration>

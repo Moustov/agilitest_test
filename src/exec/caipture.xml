@@ -1,0 +1,10 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="caipture" verbose="0" id="AGT-86B812C3-1C36-2326-5920-9A2B6E5CD28C" version="ats2">
+  <parameter name="ats.suite.description" value=""/>
+  <parameter name="ats.log.level" value="silent"/>
+  <test name="caipture.runnable">
+    <packages>
+      <package name="caipture.runnable"/>
+    </packages>
+  </test>
+</suite>
