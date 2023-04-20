@@ -15,5 +15,4 @@ keyboard -> $key(HOME)19042023$key(TAB)10:24 -> INPUT [name = datetime-local, ty
 click -> INPUT [type = submit, value = Submit] -> TD [text = Datetime-local :]
 comment -> check if URL includes ?datetime-local=2023-04-19T10%3A24
 check-property -> Text = https://www.caipture.com/demo/samples.html?datetime-local&eq;2023-04-19T10%3A24 -> Edit [Text = https://www.caipture.com/demo/samples.html?datetime-local&eq;2023-04-19T10%3A24] -> syscomp
-check-value ->  = 
 channel-close -> new-channel_1

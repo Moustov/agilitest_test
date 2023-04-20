@@ -1,0 +1,24 @@
+[ats-header]
+
+author -> MOUSTOV\chris
+created -> 2023-04-15 at 16:43:33
+
+[ats-variables]
+
+var -> propertyVar
+
+[ats-actions]
+
+channel-start -> firefox_channel -> firefox
+goto-url -> https://www.caipture.com/demo/samples.html
+comment -> click color
+click -> INPUT [name = color, type = color] -> TD [text = Color :]
+comment -> select color
+keyboard -> 200 -> Edit [ClassName = Edit, Name = Rouge :] -> syscomp
+keyboard -> 150 -> Edit [ClassName = Edit, Name = Vert :] -> syscomp
+keyboard -> 132 -> Edit [ClassName = Edit, Name = Bleu :] -> syscomp
+click -> Button [ClassName = Button, Name = OK] -> syscomp
+comment -> submit color
+click -> INPUT [type = submit, value = Submit] -> TD [text = Color :]
+check-property -> Text = https://www.caipture.com/demo/samples.html?color&eq;%23c89684 -> Edit [Name = Saisir un terme à rechercher ou une adresse] -> syscomp
+channel-close -> firefox_channel
