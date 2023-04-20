@@ -1,0 +1,14 @@
+[ats-header]
+
+author -> chris
+created -> 2023-04-20 at 23:31:05
+
+[ats-variables]
+
+
+[ats-actions]
+
+comment -> <i>test a REST API with the embedded jenkins (see "Tools" panel in agilitest EDI) ...</i>
+channel-start -> new-channel -> http://192.168.0.21:8081/job/test/api/json?pretty=true
+api-get -> http://192.168.0.21:8081/job/test/api/json?pretty=true [Accept = application/json]
+check-property -> name = index0 -> OBJECT [name = index0, url = http://192.168.0.21:8081/job/test/3/]
